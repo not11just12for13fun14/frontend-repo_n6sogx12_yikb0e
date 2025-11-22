@@ -10,15 +10,24 @@
     --font-mona: 'Mona Sans', system-ui, sans-serif;
     --font-ibm-plex: 'IBM Plex Sans', system-ui, sans-serif;
     --font-manrope: 'Manrope', system-ui, sans-serif;
+    --brand-green: #0f4d2f;
   }
 
   html {
     font-family: var(--font-sans);
     font-feature-settings: "rlig" 1, "calt" 1;
+    scroll-behavior: smooth;
   }
 
   body {
     @apply antialiased;
+    background-color: #000;
+    color: #fff;
+  }
+
+  ::selection {
+    background: rgba(15, 77, 47, 0.6);
+    color: #fff;
   }
 }
 
